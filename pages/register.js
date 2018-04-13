@@ -41,23 +41,27 @@ class Register extends React.Component {
           placeholder='Username'
           value={this.state.username}
           onChange={e => this.onChange(e)}/>
+        <br/>
         <Input
           name='email'
           placeholder='Email'
           value={this.state.email}
           type='email'
           onChange={e => this.onChange(e)}/>
+        <br/>
         <Input
           name='password'
           placeholder='Password'
           value={this.state.password}
           type='password'
           onChange={e => this.onChange(e)}/>
+        <br/>
         <Checkbox
           name='isAdmin'
           checked={this.state.isAdmin}
           onChange={e => this.onChange(e)}>Admin?</Checkbox>
-        <Button type='primary' onClick={() => this.onSubmit()}>Submit</Button>
+        <br/>
+        <Button type='primary' onClick={this.onSubmit}>Submit</Button>
       </div>
     )
   }
